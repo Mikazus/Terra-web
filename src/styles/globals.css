@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Kamu bisa menambahkan style global tambahan di sini.
+  Contohnya, kita terapkan font-sans (dari config) ke seluruh body.
+*/
+body {
+  @apply font-sans antialiased;
+}
