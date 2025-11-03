@@ -12,8 +12,9 @@ const Footer = () => {
           {/* Kolom 1: Logo & Slogan */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <FaSeedling className="h-8 w-auto text-white" />
+              <FaSeedling className="h-8 w-auto text-green-500" />
               <span className="text-3xl font-bold text-white">Terra</span>
+               
             </Link>
             <p className="text-lg text-gray-300">
               Turn intention into impact. Preserve the earth, together.
@@ -50,12 +51,11 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-brand-green-light transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-brand-green-light transition-colors">About Us</Link></li>
               <li><Link to="/program" className="hover:text-brand-green-light transition-colors">Program</Link></li>
+              <li><Link to="/contact" className="hover:text-brand-green-light transition-colors">Contact</Link></li>
+              <li>  </li>
             </ul>
           </div>
-
         </div>
-
-        {/* Bagian Copyright (Garis Pemisah & Teks) */}
         <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>Terra. All rights reserved</p>
           <div className="flex gap-6 mt-4 md:mt-0">
@@ -67,5 +67,4 @@ const Footer = () => {
     </footer>
   )
 }
-
 export default Footer

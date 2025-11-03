@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import ArticleCard from '../components/ui/ArticleCard'
+import arti1 from '../images/arti1.png'
+import arti2 from '../images/arti2.png'
+import arti3 from '../images/arti3.png'
 
 const articles = [
-  { title: "Impact of Climate Change and Our Role", date: "15 November 2024", category: "Global issue", imageUrl: "/images/article-climate.jpg" },
-  { title: "Sustainable Living: Start from Home", date: "15 November 2024", category: "Lifestyle", imageUrl: "/images/article-living.jpg" },
-  { title: "Forest Conservation Success Stories", date: "15 November 2024", category: "Conservation", imageUrl: "/images/article-forest.jpg" },
+  { title: "Impact of Climate Change and Our Role", date: "15 November 2024", category: "Global issue", imageUrl: arti1 },
+  { title: "Sustainable Living: Start from Home", date: "15 November 2024", category: "Lifestyle", imageUrl: arti2 },
+  { title: "Forest Conservation Success Stories", date: "15 November 2024", category: "Conservation", imageUrl: arti3 },
   // ... Tambahkan artikel lainnya
 ];
 
@@ -33,7 +36,7 @@ const Article = () => {
               onClick={() => setActiveCategory(category)}
               className={`py-2 px-6 rounded-full font-medium transition-colors ${
                 activeCategory === category
-                  ? 'bg-brand-green-medium text-white'
+                  ? 'bg-[#91C93A] text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'
               }`}
             >
@@ -52,5 +55,4 @@ const Article = () => {
     </div>
   )
 }
-
 export default Article

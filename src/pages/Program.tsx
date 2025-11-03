@@ -1,25 +1,7 @@
 import ProgramCard from '../components/ui/ProgramCard'
+import programData from '../data/programData'
 
-const programs = [
-  {
-    title: "School Education",
-    description: "Environmental education programs in schools to build awareness from an early age about nature conservation.",
-    participant: "450+ Participant",
-    impact: "2.5 tons of managed waste"
-  },
-  {
-    title: "School Education",
-    description: "Environmental education programs in schools to build awareness from an early age about nature conservation.",
-    participant: "450+ Participant",
-    impact: "2.5 tons of managed waste"
-  },
-  {
-    title: "School Education",
-    description: "Environmental education programs in schools to build awareness from an early age about nature conservation.",
-    participant: "450+ Participant",
-    impact: "2.5 tons of managed waste"
-  }
-];
+const programs = programData;
 
 const Program = () => {
   return (

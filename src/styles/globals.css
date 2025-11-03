@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-/* Kamu bisa menambahkan style global tambahan di sini.
-  Contohnya, kita terapkan font-sans (dari config) ke seluruh body.
-*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply font-sans antialiased;
 }

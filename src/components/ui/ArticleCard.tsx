@@ -10,7 +10,7 @@ type ArticleCardProps = {
 
 const ArticleCard = (props: ArticleCardProps) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden flex flex-col">
+    <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden flex flex-col hover:shadow-2xl hover:shadow-white/50 transition-shadow duration-300">
       <img src={props.imageUrl} alt={props.title} className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <span className="text-sm font-medium text-brand-green-medium mb-2">{props.category}</span>
@@ -23,7 +23,7 @@ const ArticleCard = (props: ArticleCardProps) => {
 
         <Link 
           to="#" 
-          className="mt-auto text-center w-full bg-brand-green-light text-brand-green-dark font-semibold py-3 rounded-lg hover:bg-opacity-80 transition-colors"
+          className="mt-auto text-center w-full bg-[#91C93A] text-white font-semibold py-3 rounded-3xl hover:bg-opacity-80 transition-colors"
         >
           Read Article
         </Link>

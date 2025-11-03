@@ -11,8 +11,8 @@ const Button = ({ href, variant, children, isFullWidth = false }: ButtonProps) =
   const baseClasses = "inline-block px-6 py-2.5 rounded-full text-base font-semibold transition-all duration-300 text-center";
   
   const variantClasses = {
-    solid: "bg-brand-green-light text-brand-green-dark hover:bg-opacity-80 shadow-md",
-    outline: "bg-transparent border-2 border-brand-green-light text-brand-green-light hover:bg-brand-green-light hover:text-brand-green-dark"
+    solid: "bg-[#91C93A] text-[#ffffff] hover:bg-opacity-80 shadow-md",
+    outline: "bg-transparent border-2 border-white text-white hover:bg-brand-green-light hover:text-brand-green-dark"
   };
 
   const widthClass = isFullWidth ? 'w-full' : 'w-auto';
